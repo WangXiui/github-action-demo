@@ -15,7 +15,9 @@ jobs:
           persist-credentials: false
 
       - name: Pnpm
-        uses: KSXGitHub/github-actions-setup-pnpm@master
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.0.2
 
       - name: Install and Build # 下载依赖 打包项目
         run: |

@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+[在线预览](https://wangxiui.github.io/github-action-demo/)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+使用的 action 库 [github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 
-## Recommended IDE Setup
+这个 action 的作用是：
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+1. 当这个库执行 push 操作时，github 会自动执行 action 中的动作，即打包操作。
+2. 将打包后的文件推送到我的 github page。
+
+这样就不用每次打包后，手动替换 github page 中的页面了。
